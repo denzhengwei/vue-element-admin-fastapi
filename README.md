@@ -38,7 +38,6 @@ root:[vue-element-admin-fastapi]
 |      |      |      |--extensions
 |      |      |      |      |--exception.py	#全局异常捕获 暂时没有使用的需要,所以没用
 |      |      |      |      |--logger.py	#替代原来的日志
-|      |      |      |      |--routing.py	#重写路由器  支持exclude_dependencies参数=>支持全局登陆验证剔除login端口 或者你可以通过单独挂载一个新的路由器来避免全局变量
 |      |      |      |      |--utils.py		#utils 主要使用了其中的list_to_tree
 |      |      |      |--initial_data.py		#初始化数据
 |      |      |      |--main.py
@@ -138,4 +137,6 @@ QQ：619511821
 但是考虑到项目简洁纯粹,所以并没有提交。  
 把结果放到了生产，给大家看看结果，尤其是异常API访问，看看经常被扫描的API有哪些
 
-
+#### TODO
+sequnce在init_data后，没有根据数据id restart
+但是目前最近在写强化学习模型所以没空改，暂时记录
